@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { I18nConfigLibService } from 'i18n-config-lib';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  constructor( private translate: I18nConfigLibService ) {
+    this.translate.useSelectLanguage('es');
+  }
 }

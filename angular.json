@@ -116,6 +116,46 @@
           }
         }
       }
+    },
+    "i18n-config-lib": {
+      "root": "projects/i18n-config-lib",
+      "sourceRoot": "projects/i18n-config-lib/src",
+      "projectType": "library",
+      "prefix": "i18n-config-lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/i18n-config-lib/tsconfig.lib.json",
+            "project": "projects/i18n-config-lib/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/i18n-config-lib/ng-package.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/i18n-config-lib/src/test.ts",
+            "tsConfig": "projects/i18n-config-lib/tsconfig.spec.json",
+            "karmaConfig": "projects/i18n-config-lib/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/i18n-config-lib/tsconfig.lib.json",
+              "projects/i18n-config-lib/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular6AppI18n"

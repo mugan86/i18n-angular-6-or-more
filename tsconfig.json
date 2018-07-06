@@ -15,6 +15,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "i18n-config-lib": [
+        "dist/i18n-config-lib"
+      ],
+      "i18n-config-lib/*": [
+        "dist/i18n-config-lib/*"
+      ]
+    }
   }
 }
