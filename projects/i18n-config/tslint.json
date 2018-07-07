@@ -4,13 +4,13 @@
         "directive-selector": [
             true,
             "attribute",
-            "i18n-config-lib",
+            "i18n-config",
             "camelCase"
         ],
         "component-selector": [
             true,
             "element",
-            "i18n-config-lib",
+            "i18n-config",
             "kebab-case"
         ]
     }

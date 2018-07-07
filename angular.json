@@ -117,38 +117,38 @@
         }
       }
     },
-    "i18n-config-lib": {
-      "root": "projects/i18n-config-lib",
-      "sourceRoot": "projects/i18n-config-lib/src",
+    "i18n-config": {
+      "root": "projects/i18n-config",
+      "sourceRoot": "projects/i18n-config/src",
       "projectType": "library",
-      "prefix": "i18n-config-lib",
+      "prefix": "i18n-config",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/i18n-config-lib/tsconfig.lib.json",
-            "project": "projects/i18n-config-lib/ng-package.json"
+            "tsConfig": "projects/i18n-config/tsconfig.lib.json",
+            "project": "projects/i18n-config/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/i18n-config-lib/ng-package.prod.json"
+              "project": "projects/i18n-config/ng-package.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/i18n-config-lib/src/test.ts",
-            "tsConfig": "projects/i18n-config-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/i18n-config-lib/karma.conf.js"
+            "main": "projects/i18n-config/src/test.ts",
+            "tsConfig": "projects/i18n-config/tsconfig.spec.json",
+            "karmaConfig": "projects/i18n-config/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/i18n-config-lib/tsconfig.lib.json",
-              "projects/i18n-config-lib/tsconfig.spec.json"
+              "projects/i18n-config/tsconfig.lib.json",
+              "projects/i18n-config/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

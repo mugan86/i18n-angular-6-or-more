@@ -17,11 +17,11 @@
       "dom"
     ],
     "paths": {
-      "i18n-config-lib": [
-        "dist/i18n-config-lib"
+      "i18n-config": [
+        "dist/i18n-config"
       ],
-      "i18n-config-lib/*": [
-        "dist/i18n-config-lib/*"
+      "i18n-config/*": [
+        "dist/i18n-config/*"
       ]
     }
   }
