@@ -1,5 +1,5 @@
 /*
- * Public API Surface of i18n-config-lib
+ * Public API Surface of i18n-config
  */
 
 export * from './lib/i18n-config.service';

@@ -20,10 +20,10 @@ $ npm install i18n-config --save
 and then from your Angular AppModule:
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 // Import our library
-import { I18nConfigModule } from 'i18n-config';
+import { I18nConfigModule } from 'i18n-config/src/lib/i18n-config.module';
  
 @NgModule({
   declarations: [
@@ -37,8 +37,7 @@ import { I18nConfigModule } from 'i18n-config';
     I18nConfigModule.forRoot(['es', 'ca', 'pt', 'eu', 'en'], 'es')
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
@@ -47,7 +46,7 @@ then from your Angular AppComponent to use I18nConfigService to load translate f
 
 ```typescript
 
-import { I18nConfigService } from 'i18n-config';
+import { I18nConfigService } from 'i18n-config/src/lib/i18n-config.service';
 
 @Component({
   selector: 'app-root',
@@ -63,7 +62,7 @@ If you select want language:
 
 ```typescript
 
-import { I18nConfigService } from 'i18n-config';
+import { I18nConfigService } from 'i18n-config/src/lib/i18n-config.service';
 
 @Component({
   selector: 'app-root',
