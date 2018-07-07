@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "publish_lib_prod": "ng build --prod i18n-config",
+    "npm_pack": "cd dist/i18n-config && npm pack"
   },
   "private": true,
   "dependencies": {
