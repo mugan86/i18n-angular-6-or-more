@@ -1,6 +1,6 @@
 {
   "name": "i18n-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "dependencies": {
     "@angular/http": "^6.0.3",
     "@ngx-translate/core": "^10.0.2",

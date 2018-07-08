@@ -10,6 +10,5 @@ import { I18nConfigService } from 'i18n-config';
 export class AppComponent {
   title = 'app';
   constructor( private translate: I18nConfigService ) {
-    this.translate.useSelectLanguage('es');
   }
 }
