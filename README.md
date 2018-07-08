@@ -25,7 +25,7 @@ COMING SOON
 and then from your Angular AppModule:
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 // Import our library
 import { I18nConfigModule } from 'i18n-config';
@@ -42,8 +42,7 @@ import { I18nConfigModule } from 'i18n-config';
     I18nConfigModule.forRoot(['es', 'ca', 'pt', 'eu', 'en'], 'es')
   ],
   providers: [],
-  bootstrap: [AppComponent],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 ```
