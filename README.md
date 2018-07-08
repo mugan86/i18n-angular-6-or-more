@@ -14,6 +14,10 @@ $ npm install @ngx-translate/http-loader
 
 ### Last beta prod version (0.1.2)
 
+* Download i18nlib from this url: https://github.com/mugan86/i18n-angular-5-or-more/blob/develop/publish/i18n-config-1.0.2.tgz
+
+* Taking into account where you have saved it, you will have to access where you have it.
+
 ![alt text](https://github.com/mugan86/i18n-angular-5-or-more/blob/develop/publish/i18nlib.gif)
 
 ### From NPM (Stable version)
