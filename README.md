@@ -13,9 +13,8 @@ $ npm install @ngx-translate/http-loader
 ## Instructions to install and configure
 
 ### Last beta prod version (0.1.2)
-```ssh
-$ npm install https://github.com/mugan86/i18n-angular-5-or-more/blob/develop/publish/i18n-config-1.0.2.tgz
-```
+
+![alt text](https://github.com/mugan86/i18n-angular-5-or-more/blob/develop/publish/i18nlib.gif)
 
 ### From NPM (Stable version)
 ```ssh
