@@ -1,14 +1,8 @@
-# Language Config Library in Angular 5+
+# Language Config Library in Angular 6+
 
 This library use @ngx-translate dependencies and its own service to manage the translations in the language selects that can be by configuration and in case it is not configured by default the language of the browser.
 
-**This library works in Angular 5+**
-
-**if you use npm >= 5.0.0 must install @ngx-translate dependencies manually with:**
-```ssh
-$ npm install @ngx-translate/core
-$ npm install @ngx-translate/http-loader
-```
+**This library works in Angular 6+**
 
 ## Instructions to install and configure
 
@@ -74,7 +68,7 @@ export class AppComponent {
   }
 }
 ```
-Finally, we must add the translation files to the correct directory, which will be in ***src/assets/i18n/language-code.json***. For example for Spanish, we must add the file ***src/assets/i18n/es.json***.
+Finally, we must add the translation files to the correct directory, which will be in ***src/assets/i18n/select-language-code.json***. For example for Spanish, we must add the file ***src/assets/i18n/es.json***.
 
 ## How to use it in the template?
 
@@ -84,7 +78,9 @@ Now having all this correctly configured, we visualize it in the layout making u
 {{ 'label' | translate}}
 ```
 
-'label' is a one value that load from <language-code>.json
+'label' is a one value that load text from <language-code-of-select-language>.json
+
+## Last udpate data: 2018/10/26
 
 ## License
 

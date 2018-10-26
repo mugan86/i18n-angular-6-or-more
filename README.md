@@ -1,34 +1,28 @@
-# Language Config Library in Angular 5+
+# Language Config Library in Angular 6+
 
 This library use @ngx-translate dependencies and its own service to manage the translations in the language selects that can be by configuration and in case it is not configured by default the language of the browser.
 
-**This library works in Angular 5+**
-
-**if you use npm >= 5.0.0 must install @ngx-translate dependencies manually with:**
-```ssh
-$ npm install @ngx-translate/core
-$ npm install @ngx-translate/http-loader
-```
+**This library works in Angular 6+**
 
 ## Instructions to install and configure
 
-### Last beta prod version (0.1.2)
 
-* Download i18nlib from this url: https://github.com/mugan86/i18n-angular-5-or-more/blob/develop/publish/i18n-config-1.0.2.tgz
+### Last beta prod version (0.1.4)
+
+* Download i18nlib from this url: https://github.com/mugan86/i18n-angular-6-or-more/blob/develop/publish/i18n-config-1.0.2.tgz
 
 * Taking into account where you have saved it, you will have to access where you have it.
 
-![alt text](https://github.com/mugan86/i18n-angular-5-or-more/blob/develop/publish/i18nlib.gif)
+![alt text](https://github.com/mugan86/i18n-angular-6-or-more/blob/develop/publish/i18nlib.gif)
 
 ### From NPM (Stable version)
 ```ssh
-COMING SOON
+$ npm install i18n-config --save
 ```
 
 and then from your Angular AppModule:
 ```typescript
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 // Import our library
 import { I18nConfigModule } from 'i18n-config';
@@ -46,7 +40,7 @@ import { I18nConfigModule } from 'i18n-config';
   ],
   providers: [],
   bootstrap: [AppComponent]
-})
+  })
 export class AppModule { }
 ```
 
@@ -83,7 +77,7 @@ export class AppComponent {
   }
 }
 ```
-Finally, we must add the translation files to the correct directory, which will be in ***src/assets/i18n/language-code.json***. For example for Spanish, we must add the file ***src/assets/i18n/es.json***.
+Finally, we must add the translation files to the correct directory, which will be in ***src/assets/i18n/select-language-code.json***. For example for Spanish, we must add the file ***src/assets/i18n/es.json***.
 
 ## How to use it in the template?
 
@@ -93,7 +87,9 @@ Now having all this correctly configured, we visualize it in the layout making u
 {{ 'label' | translate}}
 ```
 
-'label' is a one value that load from <language-code>.json
+'label' is a one value that load text from <language-code-of-select-language>.json
+
+## Last udpate data: 2018/10/26
 
 ## License
 
