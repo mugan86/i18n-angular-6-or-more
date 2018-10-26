@@ -6,10 +6,9 @@ This library use @ngx-translate dependencies and its own service to manage the t
 
 ## Instructions to install and configure
 
+### Last beta prod version (1.0.4)
 
-### Last beta prod version (0.1.4)
-
-* Download i18nlib from this url: https://github.com/mugan86/i18n-angular-6-or-more/blob/develop/publish/i18n-config-1.0.2.tgz
+* Download i18nlib from this url: https://github.com/mugan86/i18n-angular-6-or-more/blob/develop/publish/i18n-config-1.0.4.tgz
 
 * Taking into account where you have saved it, you will have to access where you have it.
 
