@@ -1,13 +1,13 @@
 {
   "name": "i18n-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "dependencies": {
-    "@angular/http": "^6.0.3",
-    "@ngx-translate/core": "^10.0.2",
-    "@ngx-translate/http-loader": "^3.0.1"
+    "@angular/http": "^6.0.3 || ^7.0.0",
+    "@ngx-translate/core": "^11.0.0",
+    "@ngx-translate/http-loader": "^4.0.0"
   },
   "peerDependencies": {
-    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
-    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0 || ^7.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0 || ^7.0.0"
   }
 }
