@@ -10,7 +10,8 @@
     "e2e": "ng e2e",
     "publish_lib_prod": "ng build --prod i18n-config",
     "npm_pack": "cd dist/i18n-config && npm pack",
-    "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json --disableCoverage --hideGenerator"
+    "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json --disableCoverage --hideGenerator",
+    "package": "npm run publish_lib_prod && npm run npm_pack"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +24,8 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "@ngx-translate/core": "^11.0.0",
+    "@ngx-translate/http-loader": "^4.0.0",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
     "zone.js": "^0.8.26"
@@ -40,13 +43,13 @@
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~1.7.1",
+    "karma": "^3.1.1",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~1.4.2",
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
     "ng-packagr": "^3.0.0-rc.2",
-    "protractor": "~5.3.0",
+    "protractor": "^5.4.1",
     "ts-node": "~5.0.1",
     "tsickle": ">=0.25.5",
     "tslib": "^1.7.1",
