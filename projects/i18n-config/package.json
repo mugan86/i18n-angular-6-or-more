@@ -1,6 +1,20 @@
 {
   "name": "i18n-config",
   "version": "1.0.4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mugan86/i18n-angular-6-or-more.git"
+  },
+  "keywords": [
+    "conversions",
+    "node",
+    "javascript",
+    "npm"
+  ],
+  "bugs": {
+    "url": "https://github.com/mugan86/i18n-angular-6-or-more/issues"
+  },
+  "homepage": "https://github.com/mugan86/i18n-angular-6-or-more#readme",
   "dependencies": {
     "@angular/http": "^6.0.3 || ^7.0.0",
     "@ngx-translate/core": "^11.0.0",
