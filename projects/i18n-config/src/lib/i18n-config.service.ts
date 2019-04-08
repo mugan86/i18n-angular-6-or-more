@@ -1,6 +1,8 @@
 import { Injectable, Inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageConfigInterface } from './i18n-config.interface';
+import { map } from 'rxjs/operators';
+import { Observable } from 'rxjs/internal/Observable';
 
 @Injectable({
   providedIn: 'root'
@@ -129,11 +131,11 @@ export class I18nConfigService {
      * @param text {string} text to want translate
      * @description
      * Returns translated text depending on language set and select text id.
+     * Use subscribe to take value and use in component select
      */
-    getStringByLabel(text: string): string {
-        this.translate.get(text).subscribe((res: string) => {
+    getStringByLabel(text: string): Observable<any> {
+        return this.translate.get(text).pipe(map((res: string) => {
             return res;
-        });
-        return text;
+        }));
     }
 }

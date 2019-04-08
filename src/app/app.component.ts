@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { I18nConfigService } from 'i18n-config';
+import { I18nConfigService } from 'projects/i18n-config/src/lib/i18n-config.service';
 
 
 @Component({
@@ -10,5 +10,7 @@ import { I18nConfigService } from 'i18n-config';
 export class AppComponent {
   title = 'app';
   constructor( private translate: I18nConfigService ) {
+
+    console.log(this.translate.getStringByLabel('GOODBYE').subscribe(data => console.log(data)));
   }
 }

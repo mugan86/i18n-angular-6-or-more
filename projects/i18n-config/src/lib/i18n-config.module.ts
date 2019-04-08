@@ -5,7 +5,6 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { createTranslateLoader } from './translate-loader.service';
-import { ExampleComponent } from './example.component';
 import { I18nConfigService } from './i18n-config.service';
 
 @NgModule({
@@ -19,8 +18,7 @@ import { I18nConfigService } from './i18n-config.service';
       }
     })
   ],
-  exports: [ExampleComponent, TranslateModule],
-  declarations: [ExampleComponent]
+  exports: [TranslateModule]
 })
 export class I18nConfigModule {
   static forRoot(languageCodes?: string[], defaultLang?: string) {
