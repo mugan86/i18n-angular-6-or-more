@@ -1,5 +1,6 @@
+import { TranslateService } from '@ngx-translate/core';
 import { Component } from '@angular/core';
-import { I18nConfigService } from 'projects/i18n-config/src/lib/i18n-config.service';
+import { I18nConfigService } from 'projects/i18n-config/src/public_api';
 
 
 @Component({
@@ -9,8 +10,9 @@ import { I18nConfigService } from 'projects/i18n-config/src/lib/i18n-config.serv
 })
 export class AppComponent {
   title = 'app';
-  constructor( private translate: I18nConfigService ) {
+  constructor( private translate: TranslateService ) {
 
-    console.log(this.translate.getStringByLabel('GOODBYE').subscribe(data => console.log(data)));
+    // this.translate.getStringByLabel('GOODBYE').subscribe(data => console.log(data));
+    this.translate.setDefaultLang(localStorage.getItem('selectLanguage'));
   }
 }
